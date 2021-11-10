@@ -10,4 +10,5 @@ public class StrawHatsApplication {
 		SpringApplication.run(StrawHatsApplication.class, args);
 	}
 
+
 }

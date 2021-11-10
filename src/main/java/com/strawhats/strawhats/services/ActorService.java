@@ -37,14 +37,13 @@ public class ActorService {
 
     //TODO: delete an Actor
     public void deleteVoiceCast(Long id){
-
+        Actor curActor = actorRepo.findById(id).orElseThrow();
+        actorRepo.delete(curActor);
     }
 
     //TODO: get a single Actor
     public Actor getSingleVoiceCast(Long id){
-
-
-        return null;
+        return actorRepo.findById(id).orElse(null);
     }
 
 
